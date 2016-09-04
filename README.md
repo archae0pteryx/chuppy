@@ -1,8 +1,28 @@
 # Chuppy
-## A game to level your inner keyboard ninja
 ---
-TODO: 
+         __________
+         (..       \_    ,  |\  /|
+          \       O  \  /|  \ \/ /
+           \______    \/ |   \  /
+             vvvvv\    \ |   /  |
+              \^^^^  ==   \_/   |
+               `\_   ===    \.  |
+               / /\_   \ /      |
+               |/   \_  \|      /
+                      \________/
 
-1. A way to time response?
-2. Level system? Write -c(x) to file question_mark
-3. Put some buffer in. Can shell text be enlarged? prob not
+____________________________________________________
+
+                  * Chuppy *
+____________________________________________________
+## A game to level your inner keyboard ninja
+### Instructions:
+chmod it.
+run it.
+
+The game is simple. Select a level 1-10^10 you must match the characters on screen as fast as you can. The timer hasn't been implemented yet but it will... oh, it will.
+
+### TODO:
+1. Timer
+2. Better score keeping (perhaps effected by the time)
+3. Write in game instructions
