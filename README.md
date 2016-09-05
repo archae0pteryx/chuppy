@@ -24,6 +24,4 @@ The game is simple. Select a level 1-10^10 you must match the characters on scre
 
 ### TODO:
 1. Gap between multiple lines.
-1. Timer
 2. Better score keeping (perhaps effected by the time)
-3. Write in game instructions
