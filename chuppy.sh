@@ -76,11 +76,11 @@ play () {
           exit 0
         else
           echo "eerrrnnnnt!"
-          echo "Your score is $1", $score
+          echo "Your score is:" $score
           exit 0
       fi
   done
-  echo "Times UP: $1" $score
+  echo "Times UP:" $score
 }
 menu
 opts
