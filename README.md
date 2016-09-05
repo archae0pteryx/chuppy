@@ -15,7 +15,7 @@ ____________________________________________________
 
                   * Chuppy *
 ____________________________________________________
-## A game to level your inner keyboard ninja
+## A game to level your inner keyboard
 ### Instructions:
 chmod it.
 run it.
