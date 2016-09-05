@@ -20,7 +20,8 @@ ____________________________________________________
 chmod it.
 run it.
 
-The game is simple. Select a level 1-10^10 you must match the characters on screen as fast as you can. The timer hasn't been implemented yet but it will... oh, it will.
+The game is simple. Select a level (easy/nightmare). 
+You must match the characters on screen as fast as you can. 
 
 ### TODO:
 1. Gap between multiple lines.
