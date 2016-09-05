@@ -27,7 +27,7 @@ menu () {
   echo "(q)uit"
 }
 opts () {
-  read -r -p "Select one: " choice
+  read -r -p "----->" choice
   case $choice in
     "i") instruct ;;
     "l") level_select ;;
@@ -67,7 +67,7 @@ play () {
           exit 0
       fi
   done
-  echo "You win! Your score is: $1", $score 
+  echo "You win! Your score is: $1", $score
 }
 menu
 opts
