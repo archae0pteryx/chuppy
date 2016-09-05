@@ -1,4 +1,5 @@
 # Chuppy
+[![Build Status](https://travis-ci.org/archae0pteryx/chuppy.svg?branch=master)](https://travis-ci.org/archae0pteryx/chuppy)
 ---
          __________
          (..       \_    ,  |\  /|
