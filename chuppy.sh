@@ -1,9 +1,9 @@
 #!/bin/bash
-#len=$(lvl)
+
 pos=0
 score=0
-
 clear
+#len=10
 cat << "EOF"
          __________
          (..       \_    ,  |\  /|
@@ -36,10 +36,14 @@ opts () {
   esac
 }
 level_select () {
-  read -r -p "Select a level: " lvl
-  case ${lvl#[-+]} in
-  *[!0-9]* ) echo "Please select a number from 10-1000" ;;
-  * ) len="$lvl" && play ;;
+  echo "(e)asy"
+  echo "(n)ightmare"
+  echo "(q)uit"
+  read -r -p "---> " lvl
+  case $lvl in
+    "e") len=30 && lvl_sec=30 && play ;;
+    "n") len=100 && lvl_sec=45 && play ;;
+  * ) echo "E.N.or.Q!" ;;
 esac
 }
 instruct () {
@@ -54,7 +58,8 @@ play () {
   str="$(tr -Cd 'A-Za-z0-9' < /dev/urandom | head -c "$len" | sed -e 's/./& /g')"
   echo "${str}"
   show_caret
-  while (( $pos < $len )); do
+  end=$((SECONDS+$lvl_sec))
+  while (( $pos < $len )) && [ $SECONDS -lt $end ]; do
       read -rsN1 ch
       if [[ $ch ==  "${str:$((2*pos)):1}" ]]; then
           ((score++))
@@ -67,7 +72,7 @@ play () {
           exit 0
       fi
   done
-  echo "You win! Your score is: $1", $score
+  echo "Times Up: $1", $score
 }
 menu
 opts
